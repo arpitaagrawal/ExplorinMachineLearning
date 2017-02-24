@@ -1,0 +1,14 @@
+Loading Dataset: Using the Boston Housing Data Set from UCI’s machine learning data repository from https://archive.ics.uci.edu/ml/datasets/Housing. 
+
+The dataset contains 506 data points, where each data point has 13 features attributes and 1 target attribute. The task is to predict the value of the target using the values of 13 features. If you load the data from the UCI website, the last attribute (MEDV ) is the target. If you load the data using sklearn.datasets module, the target attribute is already separated into the target field.
+
+Training/Test Splitting: Separated the 506 data points into training/test sets. The test set consists of all (7i)-th data points (where i = 0, 1, 2, . . . , 72), and the rest will be used as training set. This will create a test set of size 73 and a training set of size 433.
+
+
+Data Analysis To understand the data at hand is an important step toward solving the machine learning task. Ploted the histograms of all numerical attributes and calculate the Pearson correlation with the target value. It should be done on the training data. For numerical attributes, the histogram should be plotted using 10 bins with equal width.
+
+Data Preprocessing Standardize all features so they are centered at 0 and the standard deviation is 1. Remember that you should only use the training data. 
+
+Linear Regression & Ridge Regression
+
+Let xi and yi be the feature vector and target value of the i-th data point, respectively. Implemented linear regression and ridge regression algorithms and applied them on the Boston housing data. 
